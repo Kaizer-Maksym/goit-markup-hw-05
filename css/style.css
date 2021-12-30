@@ -156,6 +156,7 @@ ul {
 
 .site-nav .link {
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .item:not(:last-child) {
@@ -169,7 +170,6 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -214,28 +214,27 @@ ul {
 .contacts.link {
   align-items: center;
   color: var(--primery-tex-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts.link:hover,
 .contacts.link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts.link:hover > .icon-contacts {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts.link:focus > .icon-contacts {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-contacts {
   margin-right: 10px;
   align-items: center;
   fill: var(--primery-tex-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------- INDEX ----------------------*/
@@ -306,15 +305,15 @@ ul {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--bg-button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------------Backdrop--------------------------------- */
@@ -569,6 +568,9 @@ ul {
   margin-right: 10px;
 }
 
+.team-slicon {
+}
+
 .social-icon {
   display: inline-block;
   width: 44px;
@@ -576,22 +578,24 @@ ul {
   padding: 12px;
   border-radius: 50%;
   fill: var(--prime-sl-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks {
+  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover > .networks {
   fill: var(--white-color);
-  transition: fiil 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:focus > .networks {
   fill: var(--white-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------------Clients-------------------------------------- */
@@ -639,25 +643,24 @@ ul {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-logo {
   fill: var(--prime-sl-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
   border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon:hover > .clients-logo {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon:focus > .clients-logo {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------------ Footer ----------------*/
@@ -709,6 +712,7 @@ ul {
 
 .address {
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer.link {
@@ -717,18 +721,17 @@ ul {
   text-decoration: none;
 
   color: var(--footer-tx-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover,
 .address:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer.link:hover,
 .footer.link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item:not(:last-child) {
@@ -775,6 +778,7 @@ ul {
   padding: 12px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cf-networks {
@@ -784,7 +788,6 @@ ul {
 .cf-icon:hover,
 .cf-icon:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------- PORTFOLIO----------------------*/
@@ -807,6 +810,8 @@ ul {
   letter-spacing: 0.03em;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary:hover,
@@ -815,9 +820,6 @@ ul {
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio {
@@ -883,6 +885,8 @@ ul {
 
   background-color: rgba(33, 150, 243, 0.9);
 
+  opacity: 0;
+
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -907,15 +911,19 @@ ul {
   color: var(--white-color);
 }
 
+.exampl.link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .exampl.link:hover .product-overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .exampl.link:hover,
 .exampel.link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .exampl-meta {
